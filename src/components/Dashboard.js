@@ -22,7 +22,7 @@ function Dashboard() {
 
   return (
     <div className="dashboard-container">
-      <h1 id="app-title">My To-Do List</h1>
+      <h1 id="app-title">To-Do App</h1>
       <AddTaskForm fetchTasks={fetchTasks} />
       <TaskList tasks={tasks} fetchTasks={fetchTasks} />
     </div>

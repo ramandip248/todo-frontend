@@ -24,14 +24,14 @@ function TaskList({ tasks, fetchTasks }) {
   return (
     <div className='taskList-container'>
     <ul>
-      {tasks.map((task) => (
+      {tasks.length>0 ?tasks.map((task) => (
         <TaskItem
           key={task._id}
           task={task}
           deleteTask={handleDelete}
           updateTaskStatus={handleTaskStatusChange}
         />
-      ))}
+      )):<h5>no data available</h5>}
     </ul>
     </div>
   );
