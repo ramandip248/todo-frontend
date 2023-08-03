@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8000/api/tasks';
+const API_BASE_URL = 'https://todoapp-mern-backend.onrender.com/api/tasks';
 
 export const getTasks = async () => {
   try {
